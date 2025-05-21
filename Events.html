@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans - Events</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #8b3f00;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar li {
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(167, 78, 20);
+        }
+
+        /* Header styles */
+        .header {
+            background-color: #8b3f00;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        /* Navigation Button */
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            background-color: #cc5200;
+        }
+
+        /* Events Section */
+        .events {
+            margin-top: 40px;
+        }
+
+        .events h2 {
+            font-size: 36px;
+            color: #8b3f00;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .events-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .event-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .event-card h3 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+
+        .event-card p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .event-card a {
+            color: #8b3f00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .event-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #302317;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us & Jobs.html">About Us</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <div class="container">
+        <div class="header">
+            <h1>Upcoming Events</h1>
+            <p>Join our latest events to connect, learn, and grow in the world of web development.</p>
+            <a href="demp.html" class="back-home">Back to Home</a>
+        </div>
+
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Events You Can’t Miss</h2>
+            <div class="events-list">
+                <div class="event-card">
+                    <h3>Developer Meetup</h3>
+                    <p>Network with developers in your area. Share ideas and find new opportunities.</p>
+                    <p><strong>Date:</strong> December 5, 2024</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="event-card">
+                    <h3>Frontend Workshop</h3>
+                    <p>Master the latest frontend frameworks and techniques with our experts.</p>
+                    <p><strong>Date:</strong> December 10, 2024</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="event-card">
+                    <h3>Hackathon 2024</h3>
+                    <p>Showcase your skills, compete for prizes, and collaborate with top developers.</p>
+                    <p><strong>Date:</strong> January 15, 2025</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="event-card">
+                    <h3>AI in Web Development</h3>
+                    <p>Discover how AI is shaping the future of web design and development.</p>
+                    <p><strong>Date:</strong> January 25, 2025</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Hot Beans &copy; 2024 | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>

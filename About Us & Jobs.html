@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans - Web Dev Jobs</title>
+    <style>
+        /* General styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #8b3f00;
+            padding: 20px;
+            width: 250px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 20px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(167, 78, 20);
+            border-radius: 5px;
+        }
+
+        /* Header styles */
+        .header {
+            background-image: url('Beanspicture.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #963517;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: rgb(155, 70, 30);
+        }
+
+        /* Content layout */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(39, 21, 9, 0.966);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            color: #352013;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Join Team Section */
+        .join-team {
+            background-color: #ac5f17;
+            color: #302317;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .join-team h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .join-team p {
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .join-team .cta-button {
+            background-color: #963517;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .join-team .cta-button:hover {
+            background-color: rgb(155, 70, 30);
+        }
+
+        /* Form Section */
+        .form-section {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-section label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .form-section input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section input[type="submit"] {
+            background-color: #963517;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-section input[type="submit"]:hover {
+            background-color: rgb(155, 70, 30);
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #302317;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us & Jobs.html">About Us</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- New Join Team Section -->
+            <section class="join-team">
+                <h2>Join Our Team at Hot Beans Web!</h2>
+                <p>We're looking for passionate and talented developers to join our growing team! If you're eager to learn, grow, and work with cutting-edge technologies, we want you!</p>
+                <p>Enjoy flexible hours, remote work opportunities, and a supportive, creative environment.</p>
+                <a href="#apply-form" class="cta-button">Apply Now</a>
+            </section>
+
+            <!-- Cards Section -->
+            <main class="content">
+                <div class="card">
+                    <h2>Junior Developer Roles</h2>
+                    <p>Find entry-level positions to kickstart your web dev career.</p>
+                    <a href="#jobs">Explore Jobs</a>
+                </div>
+                <div class="card">
+                    <h2>Learning Resources</h2>
+                    <p>Access free tools, tutorials, and guides to enhance your skills.</p>
+                    <a href="#resources">Start Learning</a>
+                </div>
+                <div class="card">
+                    <h2>Networking Events</h2>
+                    <p>Join our community events to connect with other developers.</p>
+                    <a href="#events">See Events</a>
+                </div>
+            </main>
+
+            <!-- Application Form Section -->
+            <section id="apply-form" class="form-section">
+                <h2>Apply Now</h2>
+                <form action="/submit-application" method="POST">
+                    <label for="forename">Forename</label>
+                    <input type="text" id="forename" name="forename" required>
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number" required>
+
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Hot Beans &copy; 2024 | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>
